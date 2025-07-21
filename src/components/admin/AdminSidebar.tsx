@@ -15,7 +15,7 @@ const AdminSidebar = () => {
       theme="dark"
       mode="inline"
       selectedKeys={[location.pathname]}
-      onClick={({ key }) => navigate(key)}
+      onClick={({ key }) => navigate(key)}  
       style={{ height: "100%", borderRight: 0 }}
       items={[
         {

@@ -1,12 +1,18 @@
-import HeaderNav from "./HeaderNav";
+import React from 'react';
+import ProductList from './ProductList';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
-function Homepage() {
+const Homepage: React.FC = () => {
   return (
     <div>
-      <HeaderNav />
-      <h1>Trang chủ</h1>
-      <p>Chào mừng bạn đến với trang chủ của chúng tôi!</p>
+      <Navbar />
+      <main style={{ marginTop: '100px' }}>
+        <ProductList />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
+
 export default Homepage;
